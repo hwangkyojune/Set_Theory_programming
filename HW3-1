@@ -29,7 +29,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 1,
       "metadata": {
         "id": "aYly6bJc99v4"
       },
@@ -62,9 +62,44 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "eA7cCcSh-mXU",
-        "outputId": "87ecfe47-3206-4379-eda2-df34cc98ac4e"
+        "outputId": "42dac07a-dfc1-4b29-c351-b082f4c5e8a9"
       },
-      "execution_count": null,
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "63\n",
+            "126\n",
+            "63는126의 약수이지만,126가 아니다.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = int(input())\n",
+        "y = int(input())\n",
+        "\n",
+        "if f(x=x,y=y) & f(x=y,y=x):\n",
+        "  print(\"{0}와{1}는 같은 수이다.\".format(x,y))\n",
+        "elif f(x=x,y=y):\n",
+        "  print(\"{0}는{1}의 약수이지만,{1}가 아니다.\".format(x,y))\n",
+        "elif f(x=y,y=x):\n",
+        "  print(\"{1}는{0}의 약수이지만,{0}가 아니다.\".format(x,y))\n",
+        "else:\n",
+        "  print(\"{0}와{1}는 서로 약수가 아니다.\".format(x,y))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mJ4hPDWzBld0",
+        "outputId": "004f156f-6040-45ae-e96c-03fb6c1f2f33"
+      },
+      "execution_count": 3,
       "outputs": [
         {
           "output_type": "stream",
@@ -90,41 +125,6 @@
         "elif f(x=y,y=x):\n",
         "  print(\"{1}는{0}의 약수이지만,{0}가 아니다.\".format(x,y))\n",
         "else:\n",
-        "  print(\"{0}와{1}는 서로 약수가 아니다.\".format(x,y))"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "mJ4hPDWzBld0",
-        "outputId": "34ff66c0-0be2-45b0-f94f-ab3f12e0a2f3"
-      },
-      "execution_count": null,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "6\n",
-            "3\n",
-            "3는6의 약수이지만,6가 아니다.\n"
-          ]
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "x = int(input())\n",
-        "y = int(input())\n",
-        "\n",
-        "if f(x=x,y=y) & f(x=y,y=x):\n",
-        "  print(\"{0}와{1}는 같은 수이다.\".format(x,y))\n",
-        "elif f(x=x,y=y):\n",
-        "  print(\"{0}는{1}의 약수이지만,{1}가 아니다.\".format(x,y))\n",
-        "elif f(x=y,y=x):\n",
-        "  print(\"{1}는{0}의 약수이지만,{0}가 아니다.\".format(x,y))\n",
-        "else:\n",
         "  print(\"{0}와{1}는 서로 약수가 아니다.\".format(x,y))\n",
         "  "
       ],
@@ -133,17 +133,17 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "IDSy0ZnUBlvi",
-        "outputId": "5061568a-2561-4906-f64e-8b7fe8001d86"
+        "outputId": "31b436ad-477d-49a6-bc91-19000284b6b1"
       },
-      "execution_count": null,
+      "execution_count": 4,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "7\n",
             "3\n",
-            "7와3는 서로 약수가 아니다.\n"
+            "7\n",
+            "3와7는 서로 약수가 아니다.\n"
           ]
         }
       ]
